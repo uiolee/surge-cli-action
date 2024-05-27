@@ -1,50 +1,22 @@
 name: "Surge CLI Action"
-description: "Run your Surge command"
+description: "Run Surge command"
 branding:
   icon: "terminal"
   color: "green"
 author: "Uiolee"
 inputs:
-  args:
+  surge-args:
     description: "the command you want to run."
     required: true
-    default: "list"
+    default: "-h"
   surge-token:
-    description: "your surge token"
+    description: "your surge token. It is used to access to surge."
     required: false
     default: ""
-
-outputs:
-  undefined:
-    description: "undefined"
-    value: "undefined"
-  output:
-    description: "Random number"
-    value: ${{ steps.output.output }}
-
+  surge-email:
+    description: "your surge email. (It is just used to mask your email to prevent it from being displayed in the log of workflows.)"
+    required: false
+    default: ""
 runs:
-  using: "composite"
-  steps:
-    - name: Mask Secret
-      shell: bash
-      run: echo "::add-mask::${{ inputs.surge-token }}"
-
-    - name: Print version
-      shell: bash
-      env:
-        surge_cli: "output/index.js"
-      run: |
-        node -v
-        node ${{ env.surge_cli }} -V
-
-    - name: surge ${{ inputs.args }}
-      shell: bash
-      env:
-        surge_cli: "output/index.js"
-      run: |
-        node ${{ env.surge_cli }} ${{ inputs.args }} --token ${{ inputs.surge-token }}
-
-    - name: Random Number Generator
-      id: output
-      shell: bash
-      run: echo "output=$(echo $RANDOM)" >> $GITHUB_OUTPUT
+  using: "node20"
+  main: "bundle/index.js"

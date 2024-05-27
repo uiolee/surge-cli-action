@@ -1,14 +1,16 @@
 {
   "name": "surge-cli-action",
   "version": "0.23.1-0",
+  "private": "true",
   "description": "",
   "keywords": [],
   "license": "MPL-2.0",
   "author": "uiolee (https://github.com/uiolee)",
   "scripts": {
-    "build": "ncc build node_modules/surge/lib/cli.js -o output -m -C -a --no-source-map-register --license license --debug"
+    "build": "ncc build src/main.js -o bundle -m -C -a --no-source-map-register --license license --debug",
+    "dev": "ncc build src/main.js -o bundle -C -a --no-source-map-register --license license --debug",
+    "build:cli": "ncc build node_modules/surge/lib/cli.js -o bundle -m -C -a --no-source-map-register --license license --debug"
   },
-  "dependencies": {},
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
     "surge": "^0.23.1"
