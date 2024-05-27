@@ -14,7 +14,7 @@ inputs:
     required: false
     default: ""
   surge-email:
-    description: "your surge email. (It is just used to mask your email to prevent it from being displayed in the log of workflows.)"
+    description: "your surge email. (It is just used to mask your email to prevent it from being displayed in the log of workflow.)"
     required: false
     default: ""
 runs:
