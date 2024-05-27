@@ -8,8 +8,8 @@
   "author": "uiolee (https://github.com/uiolee)",
   "scripts": {
     "build": "ncc build src/main.js -o bundle -m -C -a --no-source-map-register --license license --debug",
-    "dev": "ncc build src/main.js -o bundle -C -a --no-source-map-register --license license --debug",
-    "build:cli": "ncc build node_modules/surge/lib/cli.js -o bundle -m -C -a --no-source-map-register --license license --debug"
+    "build:cli": "ncc build node_modules/surge/lib/cli.js -o bundle -m -C -a --no-source-map-register --license license --debug",
+    "dev": "ncc build src/main.js -o bundle -C -a --no-source-map-register --license license --debug"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
