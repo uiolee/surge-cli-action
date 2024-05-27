@@ -24,11 +24,19 @@ Surge is bundled so you can use it directly without installing Surge via package
 
 ### Example
 
-https://github.com/uiolee/surge-cli-action-test/blob/5861c2914326635fce3c75e205a207e9025e1b43/.github/workflows/deploy.yml#L36-L40
+<details>
 
-## Option
+<summary>uiolee/surge-cli-action-test</summary>
 
-See `inputs` of [./action.yml](./action.yml)
+https://github.com/uiolee/surge-cli-action-test/blob/38e3c271117cfe1251b6b4432543259d2bf45d51/.github/workflows/deploy.yml#L36-L40
+
+![](./image.webp)
+
+</details>
+
+## Options
+
+See [./action.yml](./action.yml)
 
 ## Versioning
 
