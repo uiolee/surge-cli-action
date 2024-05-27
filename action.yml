@@ -1,5 +1,5 @@
 name: "Surge CLI Action"
-description: "Run Surge command"
+description: "Run Surge command without installing."
 branding:
   icon: "terminal"
   color: "green"
