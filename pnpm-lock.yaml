@@ -159,6 +159,7 @@ packages:
   fstream@1.0.12:
     resolution: {integrity: sha512-WvJ193OHa0GHPEL+AycEJgxvBEwyfRkN1vhjca23OaPVMCaLCXTd5qAu82AjTcgP1UJmytkOKb63Ypde7raDIg==}
     engines: {node: '>=0.6'}
+    deprecated: This package is no longer supported.
 
   getpass@0.1.7:
     resolution: {integrity: sha512-0fzj9JxOLfJ+XGLhR8ze3unN0KZCgZwiSSDz168VERjK8Wl8kVSdcu2kspd4s4wtAa1y/qrVRiAA0WclVsu0ng==}
@@ -231,8 +232,8 @@ packages:
     resolution: {integrity: sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==}
     engines: {node: '>=0.6.0'}
 
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+  lodash@4.17.23:
+    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
 
   mime-db@1.52.0:
     resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
@@ -605,7 +606,7 @@ snapshots:
       cli-width: 2.2.1
       external-editor: 3.1.0
       figures: 2.0.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       mute-stream: 0.0.7
       run-async: 2.4.1
       rxjs: 6.6.7
@@ -636,7 +637,7 @@ snapshots:
       json-schema: 0.4.0
       verror: 1.10.0
 
-  lodash@4.17.21: {}
+  lodash@4.17.23: {}
 
   mime-db@1.52.0: {}
 
