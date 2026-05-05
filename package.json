@@ -14,6 +14,5 @@
   "devDependencies": {
     "@vercel/ncc": "^0.38.4",
     "surge": "^0.27.3"
-  },
-  "packageManager": "pnpm@9.1.2+sha1.907f57a52517de34399d66401bf220a549e47b57"
+  }
 }
