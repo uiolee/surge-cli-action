@@ -12,7 +12,7 @@
     "dev": "ncc build src/main.js -o bundle -C -a --no-source-map-register --license license --debug"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.1",
+    "@vercel/ncc": "^0.38.4",
     "surge": "^0.23.1"
   },
   "packageManager": "pnpm@9.1.2+sha1.907f57a52517de34399d66401bf220a549e47b57"
