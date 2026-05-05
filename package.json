@@ -9,10 +9,13 @@
   "scripts": {
     "build": "ncc build src/main.js -o bundle -m -C -a --no-source-map-register --license license --debug",
     "build:cli": "ncc build node_modules/surge/lib/cli.js -o bundle -m -C -a --no-source-map-register --license license --debug",
-    "dev": "ncc build src/main.js -o bundle -C -a --no-source-map-register --license license --debug"
+    "dev": "ncc build src/main.js -o bundle -C -a --no-source-map-register --license license --debug",
+    "format": "prettier --write .",
+    "lint": "prettier --check . "
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.4",
+    "prettier": "^3.8.3",
     "surge": "^0.27.3"
   }
 }

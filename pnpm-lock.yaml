@@ -11,6 +11,9 @@ importers:
       '@vercel/ncc':
         specifier: ^0.38.4
         version: 0.38.4
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
       surge:
         specifier: ^0.27.3
         version: 0.27.3
@@ -178,6 +181,11 @@ packages:
 
   netrc@0.1.4:
     resolution: {integrity: sha512-ye8AIYWQcP9MvoM1i0Z2jV0qed31Z8EWXYnyGNkiUAd+Fo8J+7uy90xTV8g/oAbhtjkY7iZbNTizQaXdKUuwpQ==}
+
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
@@ -383,6 +391,8 @@ snapshots:
   mute-stream@0.0.8: {}
 
   netrc@0.1.4: {}
+
+  prettier@3.8.3: {}
 
   progress@2.0.3: {}
 
