@@ -11,7 +11,7 @@ Surge is bundled so you can use it directly without installing Surge via package
 > So you didn't need `npm install surge`
 
 ```yml
-- uses: uiolee/surge-cli-action@v0.23.1
+- uses: uiolee/surge-cli-action@v0.27.3
   with:
     surge-args: "./dist https://example.surge.sh"
     surge-token: ${{ secrets.SURGE_TOKEN }}
